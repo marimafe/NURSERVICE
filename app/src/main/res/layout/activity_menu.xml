@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60sp"
+            android:fontFamily="@font/handmade"
+            android:layout_gravity="center"
+            android:text="INICIO"
+            android:textSize="60sp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnagendar"
+                android:layout_width="match_parent"
+                android:text="AGENDAR CITA"
+                android:backgroundTint="@color/btn_color"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/ic_post_add"
+                style="@style/MenuButtom"/>
+
+            <Button
+                android:id="@+id/btn_mis_citas"
+                android:layout_width="match_parent"
+                android:text="MIS CITAS "
+                android:backgroundTint="@color/btn_color"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/calendar"
+                style="@style/MenuButtom"/>
+
+            <Button
+                android:id="@+id/btncerrarSesion"
+                android:layout_width="match_parent"
+                android:text="CERRAR SESION"
+                android:backgroundTint="@color/btn_color"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/ic_logout"
+                style="@style/MenuButtom"/>
+        </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

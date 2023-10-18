@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Cita médica #1"/>
+
+        <TextView
+            android:id="@+id/tv_medico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Médico 1"/>
+
+        <TextView
+            android:id="@+id/tv_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atención el día 12/05/2023"/>
+
+        <TextView
+            android:id="@+id/tv_hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A las 9:30 AM"/>
+
+        <FrameLayout
+            android:id="@+id/fl_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmada"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/ib_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand_more"
+                android:layout_gravity="end"
+                android:background="@color/trans"
+                tools:src="@drawable/ic_expand_less"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_detalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_especilidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cardiología"/>
+
+            <TextView
+                android:id="@+id/tv_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consulta"/>
+
+            <TextView
+                android:id="@+id/tv_creado_en"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La cita se registró el día 28/03/2023 con los siguientes síntomas: "/>
+
+            <TextView
+                android:id="@+id/tv_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dolor en el pecho"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
